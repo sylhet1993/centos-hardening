@@ -1,0 +1,7 @@
+---
+- name: Harden Linux (OS changes)
+  hosts: all
+  vars:
+    ansible_python_interpreter: /bin/python3
+  roles:
+    - os_hardening
